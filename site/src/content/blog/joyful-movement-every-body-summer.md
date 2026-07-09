@@ -18,6 +18,10 @@ When movement is a punishment for eating or a toll you pay to exist in a swimsui
 
 Flip it: **movement as a gift, not a sentence.** Something you do *for* your body, not *against* it. That mindset shift changes everything, and it's the one that actually lasts.
 
+Here's the whole shift in one picture:
+
+![Mindset shift: from earning summer to joyful movement](/images/everybody-diagram.svg)
+
 ## What Joyful Movement Actually Looks Like
 Here's the freeing part — it can be anything that feels good in *your* body:
 - **Dancing** in your kitchen to one loud, ridiculous song

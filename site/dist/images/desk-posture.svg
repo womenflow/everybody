@@ -1,0 +1,51 @@
+<svg viewBox="0 0 660 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of poor slouched desk posture versus good aligned posture with the screen at eye level">
+  <rect x="1" y="1" width="658" height="338" rx="16" fill="#f6faf8" stroke="#e2ede7" stroke-width="2"/>
+
+  <!-- divider -->
+  <line x1="330" y1="30" x2="330" y2="310" stroke="#e2ede7" stroke-width="2"/>
+
+  <!-- ============ LEFT: POOR POSTURE ============ -->
+  <g fill="none" stroke="#24303a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- desk + monitor (screen low) -->
+    <line x1="40" y1="250" x2="150" y2="250"/>
+    <rect x="46" y="212" width="60" height="40" rx="4" stroke="#8aa0ac" stroke-width="4"/>
+    <!-- chair seat -->
+    <line x1="180" y1="255" x2="250" y2="255"/>
+    <!-- thigh + shin -->
+    <path d="M245 255 h-60"/>
+    <path d="M185 255 v40"/>
+    <!-- curved (slouched) spine leaning forward toward screen -->
+    <path d="M235 255 q-40 -30 -70 -58 q-20 -20 -30 -30"/>
+  </g>
+  <!-- forward head -->
+  <circle cx="120" cy="150" r="24" fill="#fdece1" stroke="#24303a" stroke-width="6"/>
+  <!-- red neck-angle marker -->
+  <path d="M150 176 q-8 -20 -18 -30" fill="none" stroke="#d9534f" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="300" cy="60" r="16" fill="#fdecea" stroke="#d9534f" stroke-width="4"/>
+  <path d="M292 60 l6 6 10 -12" fill="none" stroke="#d9534f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="rotate(45 300 60)"/>
+  <line x1="292" y1="60" x2="308" y2="60" stroke="#d9534f" stroke-width="4" stroke-linecap="round"/>
+  <text x="165" y="325" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#d9534f" text-anchor="middle" font-weight="700">Slouched — head forward</text>
+
+  <!-- ============ RIGHT: GOOD POSTURE ============ -->
+  <g fill="none" stroke="#24303a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- desk + monitor (screen raised to eye level) -->
+    <line x1="510" y1="250" x2="620" y2="250"/>
+    <rect x="516" y="150" width="60" height="42" rx="4" stroke="#8aa0ac" stroke-width="4"/>
+    <line x1="546" y1="192" x2="546" y2="250"/>
+    <!-- chair seat -->
+    <line x1="410" y1="255" x2="480" y2="255"/>
+    <!-- thigh + shin -->
+    <path d="M475 255 h-60"/>
+    <path d="M475 255 v40"/>
+    <!-- straight, upright spine -->
+    <line x1="465" y1="255" x2="465" y2="168"/>
+    <!-- short neck up -->
+    <line x1="465" y1="168" x2="465" y2="150"/>
+  </g>
+  <!-- aligned head over shoulders -->
+  <circle cx="465" cy="126" r="24" fill="#fdece1" stroke="#24303a" stroke-width="6"/>
+  <!-- green check -->
+  <circle cx="360" cy="60" r="16" fill="#e9f6ee" stroke="#2f7d5b" stroke-width="4"/>
+  <path d="M353 60 l5 6 10 -12" fill="none" stroke="#2f7d5b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="500" y="325" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#2f7d5b" text-anchor="middle" font-weight="700">Aligned — screen at eye level</text>
+</svg>

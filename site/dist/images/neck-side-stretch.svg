@@ -1,0 +1,31 @@
+<svg viewBox="0 0 440 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a gentle neck side stretch, tilting the head toward the shoulder">
+  <rect x="1" y="1" width="438" height="338" rx="16" fill="#f6faf8" stroke="#e2ede7" stroke-width="2"/>
+
+  <g fill="none" stroke="#24303a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- shoulders -->
+    <path d="M120 250 q100 -34 200 0"/>
+    <!-- neck (tilted toward the right shoulder) -->
+    <line x1="220" y1="216" x2="246" y2="150"/>
+    <!-- right arm reaching over the head -->
+    <path d="M312 232 q34 -66 -30 -104"/>
+  </g>
+
+  <!-- head, tilted -->
+  <g transform="rotate(20 250 132)">
+    <circle cx="250" cy="132" r="34" fill="#fdece1" stroke="#24303a" stroke-width="6"/>
+  </g>
+  <!-- hand on head -->
+  <circle cx="284" cy="124" r="13" fill="#fdece1" stroke="#24303a" stroke-width="5"/>
+
+  <!-- stretched side highlight (left side of the neck) -->
+  <path d="M214 214 l16 -60" fill="none" stroke="#2f7d5b" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 12"/>
+
+  <!-- gentle-pull arrow -->
+  <g stroke="#2f7d5b" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M300 96 q26 8 24 40"/>
+    <path d="M318 130 l6 8 8 -6"/>
+  </g>
+
+  <text x="220" y="312" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#2f7d5b" text-anchor="middle" font-weight="700">Neck side stretch</text>
+  <text x="66" y="176" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#3c6b50" text-anchor="middle">stretch</text>
+</svg>

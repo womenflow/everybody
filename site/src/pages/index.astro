@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+
+// Only published (non-draft) posts, newest first.
+const posts = (await getCollection('blog', ({ data }) => !data.draft && data.pubDate <= new Date())).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const fmtDate = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<Base title={`${SITE.name} — ${SITE.tagline}`} description={SITE.tagline} hero={true}>
+  {
+    posts.length === 0 ? (
+      <p>No posts yet.</p>
+    ) : (
+      <div class="card-list">
+        {posts.map((p) => (
+          <a class="card" href={`/posts/${p.id}/`}>
+            <div
+              class={`card-thumb${p.data.image ? '' : ' card-thumb--empty'}`}
+              style={p.data.image ? `background-image:url('${p.data.image}')` : undefined}
+            />
+            <div class="card-body">
+              <span class="card-date">{fmtDate(p.data.pubDate)}</span>
+              <h2 class="card-title">{p.data.title}</h2>
+              <p class="card-excerpt">{p.data.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    )
+  }
+</Base>

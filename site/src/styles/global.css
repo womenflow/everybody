@@ -1,0 +1,229 @@
+:root {
+  --fg: #1a1a1a;
+  --muted: #666;
+  --accent: #2f7d5b;
+  --bg: #fff;
+  --card: #fafafa;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  color: var(--fg);
+  background: #f6f8f5;
+  line-height: 1.7;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+header.site { border-bottom: 1px solid #eee; padding: 28px 0; margin-bottom: 32px; background: #fff; }
+header.site a { text-decoration: none; color: var(--fg); }
+header.site h1 { margin: 0; font-size: 24px; }
+header.site p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+
+/* Home hero header */
+.site-hero {
+  position: relative;
+  margin-bottom: 34px;
+  color: #fff;
+  background: linear-gradient(130deg, #2f7d5b 0%, #47a178 55%, #77c79c 100%);
+  background-size: cover;
+  background-position: center 30%;
+}
+.site-hero.has-image { background-color: #1c2c24; }
+.site-hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 22, 15, 0.28), rgba(8, 22, 15, 0.5));
+}
+.site-hero:not(.has-image) .site-hero-scrim { display: none; }
+.site-hero-inner { position: relative; padding: 64px 20px; text-align: center; }
+.site-hero-inner a { text-decoration: none; color: #fff; }
+.site-hero h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.18);
+}
+.site-hero p { margin: 10px 0 0; font-size: 17px; opacity: 0.96; }
+@media (max-width: 560px) {
+  .site-hero-inner { padding: 46px 20px; }
+  .site-hero h1 { font-size: 28px; }
+  .site-hero p { font-size: 15px; }
+}
+main { padding-bottom: 64px; }
+/* Article "paper" card on the soft background */
+main article {
+  background: #fff;
+  border: 1px solid #ebeee9;
+  border-radius: 18px;
+  padding: 36px 40px;
+  box-shadow: 0 1px 3px rgba(20, 40, 30, 0.04);
+}
+@media (max-width: 560px) {
+  main article { padding: 24px 20px; border-radius: 14px; }
+}
+h1.post-title { font-size: 30px; line-height: 1.25; margin: 0 0 8px; }
+.meta { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+.content h2 { font-size: 22px; margin-top: 36px; }
+.content p, .content li { font-size: 17px; }
+.content ul { padding-left: 22px; }
+.disclaimer { color: var(--muted); font-size: 15px; margin-top: 36px; }
+/* Home page: post cards with thumbnails */
+.card-list { display: flex; flex-direction: column; gap: 22px; }
+.card {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #ebeee9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 3px rgba(20, 40, 30, 0.04);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(20, 50, 34, 0.1);
+}
+.card-thumb {
+  flex: 0 0 190px;
+  min-height: 150px;
+  background-size: cover;
+  background-position: center 22%;
+}
+.card-thumb--empty {
+  background: linear-gradient(135deg, #dff1e6 0%, #bfe6cd 55%, #a7dcbd 100%);
+}
+.card-body {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-date {
+  color: #9aa39d;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.card-title {
+  font-size: 21px;
+  line-height: 1.32;
+  margin: 6px 0 8px;
+  color: var(--fg);
+}
+.card:hover .card-title { color: var(--accent); }
+.card-excerpt { color: var(--muted); font-size: 15px; margin: 0; }
+
+@media (max-width: 560px) {
+  .card { flex-direction: column; gap: 0; }
+  .card-thumb { flex-basis: auto; width: 100%; height: 190px; }
+  .card-body { padding: 18px 20px 22px; }
+}
+.tags { margin-top: 28px; }
+.tags span {
+  display: inline-block;
+  background: var(--card);
+  border: 1px solid #eee;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 6px 6px 0;
+}
+footer.site { border-top: 1px solid #eee; padding: 28px 0; color: var(--muted); font-size: 14px; }
+a.back { color: var(--accent); text-decoration: none; font-size: 15px; }
+/* Contextual product recommendation (conversion) */
+.product-cta {
+  margin: 34px 0;
+  padding: 20px 22px;
+  border: 1px solid #dcece3;
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  background: #f4faf6;
+}
+.product-cta-pitch { margin: 0 0 14px; font-size: 16px; color: #244a38; }
+.product-cta-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* Bubblelime photo banner */
+.banner-photo {
+  position: relative;
+  display: block;
+  margin: 36px 0;
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 210px;
+  aspect-ratio: 1600 / 712;
+  background-size: cover;
+  background-position: center 30%;
+  text-decoration: none;
+}
+.banner-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 20, 14, 0.82) 0%,
+    rgba(8, 20, 14, 0.55) 38%,
+    rgba(8, 20, 14, 0.05) 70%
+  );
+}
+.banner-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 30px;
+  max-width: 72%;
+  color: #fff;
+}
+.banner-name { font-size: 30px; font-weight: 800; letter-spacing: 0.3px; }
+.banner-sub { font-size: 16px; opacity: 0.95; }
+.banner-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.banner-cta {
+  background: #fff;
+  color: #123a22;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+.banner-cta--amazon {
+  background: #ff9900;
+  color: #131921;
+}
+@media (max-width: 480px) {
+  .banner-name { font-size: 23px; }
+  .banner-sub { font-size: 14px; }
+  .banner-text { padding: 0 20px; max-width: 82%; }
+}
+/* Article images */
+.content img { max-width: 100%; height: auto; border-radius: 10px; display: block; }
+.content figure { margin: 28px 0; }
+.content figure img { margin: 0 auto; max-width: min(100%, 520px); }
+.content figcaption {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 8px;
+}

@@ -5,11 +5,26 @@ const { href } = Astro.props;
 const linkUrl = href ?? BANNER.linkUrl;
 ---
 
-<a class="banner-photo-link" href={linkUrl} target="_blank" rel="noopener sponsored" aria-label={BANNER.name}>
-  <img src={BANNER.photoUrl} alt={BANNER.name} />
-</a>
+<div class="banner-block">
+  <a class="banner-photo-link" href={linkUrl} target="_blank" rel="noopener sponsored" aria-label={BANNER.name}>
+    <img src={BANNER.photoUrl} alt={BANNER.name} />
+  </a>
+  <div class="banner-ctas">
+    <a class="banner-cta" href={linkUrl} target="_blank" rel="noopener sponsored">{BANNER.ctaLabel}</a>
+    {BANNER.amazonUrl && (
+      <a class="banner-cta banner-cta--amazon" href={BANNER.amazonUrl} target="_blank" rel="noopener sponsored">
+        Shop on Amazon
+      </a>
+    )}
+  </div>
+</div>
 
 <style>
-  .banner-photo-link { display:block; margin:32px 0 8px; border-radius:12px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,.08); }
+  .banner-block { margin: 32px 0 8px; }
+  .banner-photo-link { display:block; border-radius:12px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,.08); }
   .banner-photo-link img { width:100%; height:auto; display:block; }
+  .banner-ctas { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+  .banner-cta { display:inline-block; padding:11px 20px; border-radius:8px; font-weight:600; text-decoration:none; font-size:0.98em; }
+  .banner-cta { background:#1f6f43; color:#fff; }
+  .banner-cta--amazon { background:#ff9900; color:#111; }
 </style>

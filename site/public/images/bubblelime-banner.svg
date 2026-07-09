@@ -1,0 +1,37 @@
+<svg viewBox="0 0 1000 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bubblelime activewear — shop now">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3fbf6"/>
+      <stop offset="1" stop-color="#cfeeda"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fd84f"/>
+      <stop offset="1" stop-color="#4caf50"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="998" height="218" rx="22" fill="url(#bg)" stroke="#bfe6cd" stroke-width="1.5"/>
+
+  <!-- decorative lime slices -->
+  <g opacity="0.9">
+    <circle cx="905" cy="52" r="40" fill="url(#lime)"/>
+    <circle cx="905" cy="52" r="26" fill="#eaf9ee"/>
+    <g stroke="#8fd84f" stroke-width="3">
+      <line x1="905" y1="30" x2="905" y2="74"/>
+      <line x1="883" y1="52" x2="927" y2="52"/>
+      <line x1="889" y1="36" x2="921" y2="68"/>
+      <line x1="889" y1="68" x2="921" y2="36"/>
+    </g>
+    <circle cx="905" cy="52" r="7" fill="#8fd84f"/>
+  </g>
+  <circle cx="852" cy="150" r="14" fill="#9fe06a" opacity="0.6"/>
+
+  <!-- text -->
+  <text x="64" y="86" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#123a22">Bubblelime</text>
+  <text x="66" y="126" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#356149">Activewear that moves with you.</text>
+  <text x="66" y="156" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#5c8a73" letter-spacing="0.5">Leggings · Tops · Sports bras — comfortable, functional, affordable.</text>
+
+  <!-- button -->
+  <rect x="66" y="176" width="184" height="30" rx="15" fill="#123a22"/>
+  <text x="158" y="196" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Shop the collection →</text>
+</svg>

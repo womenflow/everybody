@@ -1,9 +1,9 @@
 ---
 title: "You Don't Need to \"Earn\" Summer: Joyful Movement for Every Body"
 description: "Forget punishing summer workouts. Here's how to move for joy — not to earn a beach body — with inclusive, feel-good movement for every body."
-pubDate: 2026-07-10T08:00:00Z
+pubDate: 2026-07-09T22:13:41Z
 tags: ["body positivity", "joyful movement", "inclusive fitness", "wellness"]
-draft: true
+draft: false
 image: "/images/everybody-s1.png"
 ---
 

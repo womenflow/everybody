@@ -14,7 +14,7 @@ export const SITE = {
 // A photo banner: background image + overlaid text/button = an intuitive shop link.
 export const BANNER = {
   linkUrl: 'https://www.bubblelime.com/', // a specific collection converts better
-  photoUrl: '/images/bubblelime-banner-photo.jpg',
+  photoUrl: '/images/everybody-banner.png',
   name: 'Bubblelime',
   subtext: 'Activewear that moves with you.',
   ctaLabel: 'Shop the collection →',

@@ -1,0 +1,15 @@
+---
+interface Props {
+  url: string;
+  label: string;
+  pitch: string;
+}
+const { url, label, pitch } = Astro.props;
+---
+
+<aside class="product-cta">
+  <p class="product-cta-pitch">{pitch}</p>
+  <a class="product-cta-btn" href={url} target="_blank" rel="noopener sponsored">
+    {label} →
+  </a>
+</aside>

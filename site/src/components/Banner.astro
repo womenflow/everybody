@@ -1,0 +1,19 @@
+---
+import { BANNER } from '../config';
+
+interface Props { href?: string; }
+const { href } = Astro.props;
+const linkUrl = href ?? BANNER.linkUrl;
+---
+
+<div class="bl-banner">
+  <a class="bl-banner-img" href={linkUrl} target="_blank" rel="noopener sponsored" aria-label={BANNER.name}>
+    <img src={BANNER.photoUrl} alt={BANNER.name} loading="lazy" />
+  </a>
+  <div class="bl-ctas">
+    <a class="bl-cta" href={linkUrl} target="_blank" rel="noopener sponsored">{BANNER.ctaLabel}</a>
+    {BANNER.amazonUrl && (
+      <a class="bl-cta bl-cta--amazon" href={BANNER.amazonUrl} target="_blank" rel="noopener sponsored">Shop on Amazon</a>
+    )}
+  </div>
+</div>

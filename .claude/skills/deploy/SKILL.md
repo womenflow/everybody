@@ -1,7 +1,7 @@
 ---
 name: deploy
 description: 지금까지 수정한 내용을 커밋하고 main에 push → Netlify 자동 배포. 예약 글 날짜가 지났을 때 다시 올릴 때도 사용
-argument-hint: [커밋 메시지 (선택)]
+argument-hint: "[커밋 메시지 (선택)]"
 allowed-tools: Read, Bash(git:*), Bash(npm run build:*), Bash(cd:*), Bash(ls:*), Bash(grep:*)
 ---
 

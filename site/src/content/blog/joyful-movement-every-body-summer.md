@@ -4,14 +4,14 @@ description: "Forget punishing summer workouts. Here's how to move for joy — n
 pubDate: 2026-07-09T22:13:41Z
 tags: ["body positivity", "joyful movement", "inclusive fitness", "wellness"]
 draft: false
-image: "/images/everybody-s1.png"
+image: "/images/everybody-s1.jpg"
 ---
 
 Every summer, the same tired message rolls back around: get "beach body ready." Sweat now, earn the sunshine, shrink to deserve the season.
 
 Let's throw that whole idea out. **You do not need to earn summer.** You already have a beach body — it's the body you're taking to the beach. What if movement this summer was about joy instead of punishment?
 
-![Diverse group of women joyfully moving outdoors](/images/everybody-s1.png)
+![Diverse group of women joyfully moving outdoors](/images/everybody-s1.jpg)
 
 ## The Problem With "Earning" It
 When movement is a punishment for eating or a toll you pay to exist in a swimsuit, it stops being something you *want* to do. It becomes a chore you resent — and resentment is a terrible long-term motivator.
@@ -35,7 +35,7 @@ Notice what's missing? Punishment. Numbers. Guilt. None of it required.
 ## Every Body Is a "Fitness Body"
 There's no shape, size, age, or ability you need to reach before you're "allowed" to move. Movement belongs to **every body** — full stop. The goal isn't to look a certain way; it's to feel strong, capable, and a little more at home in your own skin.
 
-![Women of all shapes doing joyful movement in a park](/images/everybody-s2.png)
+![Women of all shapes doing joyful movement in a park](/images/everybody-s2.jpg)
 
 ## How to Find Your Joyful Movement
 Ask yourself one question: **"What kind of moving makes me feel good, not drained?"** Then do more of that. Some quick permission slips:
